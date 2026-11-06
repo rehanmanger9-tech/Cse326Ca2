@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Club Management System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssca.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Campus Clubs</h1>
+    <p>Explore Clubs. Join Events. Discover Your Passion.</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#clubs">Clubs</a>
+    <a href="#events">Events</a>
+    <a href="#register">Join Us</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+<!-- Home Section -->
+<section id="home">
+    <h2>Welcome to Student Club Management System</h2>
+    <p>Discover different college clubs, participate in workshops
+       and connect with students who share your interests.</p>
+</section>
+
+<!-- Club Directory -->
+<section id="clubs">
+    <h2>Explore Our Clubs</h2>
+
+    <div class="club-container">
+
+        <div class="card">
+            <h3>Technical Clubs</h3>
+            <p>Coding Club and Robotics Club</p>
+            <details>
+                <summary>View Details</summary>
+                <p>Learn programming, technology and robotics.</p>
+                <p>Coordinator: Student Club Team</p>
+                <p>Email: codingclub@example.com</p>
+                <a href="mailto:codingclub@example.com">Contact</a>
+            </details>
+        </div>
+
+        <div class="card">
+            <h3>Cultural Clubs</h3>
+            <p>Drama Club and Music Club</p>
+            <details>
+                <summary>View Details</summary>
+                <p>Explore music, acting and cultural activities.</p>
+                <p>Coordinator: Student Club Team</p>
+                <p>Email: culturalclub@example.com</p>
+                <a href="mailto:culturalclub@example.com">Contact</a>
+            </details>
+        </div>
+
+        <div class="card">
+            <h3>Literary Clubs</h3>
+            <p>Writing Club and Debate Club</p>
+            <details>
+                <summary>View Details</summary>
+                <p>Improve writing, communication and speaking skills.</p>
+                <p>Coordinator: Student Club Team</p>
+                <p>Email: literaryclub@example.com</p>
+                <a href="mailto:literaryclub@example.com">Contact</a>
+            </details>
+        </div>
+
+        <div class="card">
+            <h3>Sports Clubs</h3>
+            <p>Cricket Club and Football Club</p>
+            <details>
+                <summary>View Details</summary>
+                <p>Participate in sports and fitness activities.</p>
+                <p>Coordinator: Student Club Team</p>
+                <p>Email: sportsclub@example.com</p>
+                <a href="mailto:sportsclub@example.com">Contact</a>
+            </details>
+        </div>
+
+    </div>
+</section>
+
+<!-- Events Section -->
+<section id="events">
+    <h2>Upcoming Workshops</h2>
+
+    <div class="event-container">
+
+        <div class="card">
+            <h3>Coding Workshop</h3>
+            <p>Date: 10 November 2026</p>
+            <p>Learn basic programming concepts.</p>
+            <button onclick="selectEvent('Coding Workshop')">
+                Register for Workshop
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>Robotics Workshop</h3>
+            <p>Date: 14 November 2026</p>
+            <p>Explore robotics and automation.</p>
+            <button onclick="selectEvent('Robotics Workshop')">
+                Register for Workshop
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>Music Workshop</h3>
+            <p>Date: 20 November 2026</p>
+            <p>Discover music and creativity.</p>
+            <button onclick="selectEvent('Music Workshop')">
+                Register for Workshop
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<!-- Registration Form -->
+<section id="register">
+    <h2>Club Membership Registration</h2>
+
+    <form id="clubForm">
+
+        <label>Student Name:</label>
+        <input type="text" id="name" required>
+
+        <label>Email:</label>
+        <input type="email" id="email" required>
+
+        <label>Course:</label>
+        <input type="text" id="course" required>
+
+        <label>Select Club:</label>
+        <select id="club" required>
+            <option value="">Choose a Club</option>
+            <option>Technical</option>
+            <option>Cultural</option>
+            <option>Literary</option>
+            <option>Sports</option>
+        </select>
+
+        <label>Select Your Interests:</label>
+
+        <div class="interest">
+            <input type="checkbox" name="interest" value="Coding">
+            Coding
+
+            <input type="checkbox" name="interest" value="Music">
+            Music
+
+            <input type="checkbox" name="interest" value="Sports">
+            Sports
+
+            <input type="checkbox" name="interest" value="Drama">
+            Drama
+        </div>
+
+        <label>Select Workshop:</label>
+        <select id="workshop">
+            <option value="">No workshop selected</option>
+            <option>Coding Workshop</option>
+            <option>Robotics Workshop</option>
+            <option>Music Workshop</option>
+        </select>
+
+        <button type="submit">Submit Registration</button>
+
+        <p id="message"></p>
+
+    </form>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: studentclubs@example.com</p>
+    <p>College Student Club Management Team</p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Student Club Management System</p>
+    <small>Created as a BTech First Year Project</small>
+</footer>
+
+<script src="cajavas.js"></script>
+
+</body>
+</html>
